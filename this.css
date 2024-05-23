@@ -15,6 +15,11 @@
 }
 
 @font-face {
+    font-family: "dmsans";
+    src: url(DMSans-Italic-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
     font-family: Customtext;
     src: url(Salinan\ FogtwoNo5.otf);
 }
@@ -374,7 +379,7 @@ justify-content: center;
     font-size: 33px;
     margin-bottom: 15px;
     color: #FEFBF6;
-    font-family: 'DM sans', sans-serif;
+    font-family: dmsans ;
     font-weight: 600;
     letter-spacing: 1px;
     font-style: italic;
@@ -574,6 +579,7 @@ justify-content: center;
 /* footer footer footer */
 
 footer {
+    padding: 90px;
     background-color: #0F0F0F;
     border-top: 1px solid #666;
 }
