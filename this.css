@@ -427,6 +427,9 @@ justify-content: center;
     .container-skill {
         padding-bottom: 280px;
     }
+    .container-title {
+        margin-right: 85px;
+    }
 }
 
 @media screen and (max-width:375px) {
@@ -436,6 +439,10 @@ justify-content: center;
 
     .container-skill {
         padding-bottom: 405px;
+    }
+
+    .container-title {
+        margin-right: 85px;
     }
 }
 
