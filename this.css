@@ -248,13 +248,13 @@ nav a .logo{
 
 
 .section-title h2 {
-    letter-spacing: 15px;
+    letter-spacing: 5px;
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
 }
 
 .section-title h2:hover {
-    letter-spacing: 20px;
+    letter-spacing: 10px;
     -webkit-text-stroke: 1px #F5F7F8;
     -webkit-text-fill-color: transparent
 }
@@ -296,6 +296,7 @@ nav a .logo{
 .container {
     width: 90%;
     margin: 0 auto;
+    padding-left: 5%;
     padding: 10px 20px;
     margin-bottom: 100px;
 }
@@ -332,24 +333,26 @@ nav a .logo{
 .about {
     height: 80vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0;
 }
 .about-image{
     flex: 1; 
     margin-right: 40px; 
     overflow: hidden;
-    border: 1px solid #F5F7F8;
+
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
 }
 
 
-.about-image img {
-    max-width: 100%;
+/* .about-image img {
+    max-width: 80%;
     height: auto;
     display: block;
+    border: 1px solid #F5F7F8;
     filter: grayscale(60%);
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
@@ -360,12 +363,12 @@ nav a .logo{
     filter: grayscale(0%);
 }
 
-.about-image:hover {
+.about-image img:hover {
     border: 2px solid #ffffff;
-}
+} */
 
 .about-content {
-flex: 1;
+justify-content: center;
 }
 .about-content h2 {
     font-size: 33px;
@@ -403,13 +406,14 @@ flex: 1;
 
 
 .skills-section {
-    padding: 4rem 0;
+    padding: 4rem 4rem;
 
 }
 
 .section .skill {
     display: grid;
     grid-gap: 16px;
+    padding-top: 16px;
     padding: 16px;
     max-width: 1024px;
 }
@@ -493,7 +497,7 @@ flex: 1;
 }
 
 .container{
-	width: 80%;
+	width: 100%;
 	padding: 35px 10%;
 }
 .container{
@@ -663,78 +667,6 @@ footer {
     cursor: pointer;
 }
 
-
-/* project project project */
-
-.project-section {
-    height: 100vh;
-}
-
-.project-container {
-    gap: 20px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    flex-wrap: wrap;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.project-box {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 250px;
-    height: 250px;
-    background: #ffffff;
-    border-radius: 10px;
-    /* box-shadow: 1px 8px 10px 2px #666; */
-    overflow: hidden;
-
-}
-
-.project-box>i {
-    font-size: 50px;
-    color: #E1AFD1;
-    margin-bottom: 25px;
-
-}
-
-.project-box h3 {
-    font-family: 'raleway', sans-serif;
-}
-
-.project-box label {
-    font-size: 15px;
-    color: #666;
-    font-family: 'raleway', sans-serif;
-}
-
-.project-box::after  {
-    content: "";
-    position: absolute;
-    bottom: -100%;
-    background: #E1AFD1;
-    width: 100%;
-    height: 100%;
-    transition: .4s;
-    z-index: 1;
-}
-
-.project-box:hover.project-box::after {
-    bottom: 0;
-}
-
-.project-box:hover.project-box i,
-.project-box:hover.project-box>h3,
-.project-box:hover.project-box>label {
-    color: #EEF5FF;
-    z-index: 2;
-}
-
-
 /* media responsive */
 
 @media (max-width: 991px) {
@@ -769,9 +701,6 @@ footer {
 }
 
 @media (max-width: 740px) {
-    /* .nav ul{
-        display: none;
-    } */
 
     .hero-title {
         font-size: 10px;
@@ -818,7 +747,7 @@ footer {
 }
 
 @media(max-width: 768px){
-	main.row{
+	.row{
 		grid-template-columns: 1fr;
 	}
 	.row .col:nth-child(2){
@@ -875,12 +804,12 @@ footer {
 
 @media (max-width: 600px) {
     .section-title h2 {
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .about-content p{
         font-size: 14px;
-        width: 490px;
+        width: 380px;
     }
 }
 
@@ -916,12 +845,43 @@ footer {
     .skill {
         grid-template-columns: repeat(3, 1fr);
     }
+
+}
+
+@media screen and (max-width:430px) {
+
+    .hero-text {
+        max-width: 300px;
+        
+    }
+
+    .about-content {
+        padding-top: 0px;
+        padding-left: 0px ;
+        padding-right: 70px;
+        width: 300px;
+    }
+
+    .skills-section {
+        margin-bottom: 90px;
+    }
+
+    .skill__container {
+        padding-bottom: 90px;
+        margin-bottom: 90px;
+    }
+    
 }
 
 @media screen and (max-width: 600px) {
     .skill {
         grid-template-columns: 1fr;
     }
+
+}
+
+@media screen and (min-width: 820px) {
+
 }
 
 
